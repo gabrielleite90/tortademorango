@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulários</title>
+	<meta charset="utf-8">
+    <link rel="icon" type="" href="Icons/iconCad.ico">
+
+    <style type="text/css">
+  
+    body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+      }
+    #menu{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        font-size: 30px;
+    }
+    form{
+      background-color: gray;
+      padding: 10%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+    }
+
+    </style>
+
+</head>
+<body>
+
+
+	<div id="menu">
+  Cadastro de Fãs  |
+  <a href="1ºpagina.html">1º Página</a>
+  </div>
+	<form>
+
+    Nome:
+		<input type="text" name="nome" size="45" maxlength="60" placeholder="Nome" required="">
+
+		<br><br>
+
+        Idade:<br>
+		<input type="number" size="20" placeholder="idade" min="8" max="110">
+
+		<br><br>
+
+        Senha:<br>
+        <input type="password" placeholder="senha" required>
+
+        <br><br>
+
+        Sexo:<br>
+        M
+        <input type="radio" name="Sexo" value="M">
+
+        F
+        <input type="radio" name="Sexo" value="F">
+
+        <br><br>      
+        
+         <fieldset>
+           <legend>Datas</legend>
+            Data de Nascimento:<br> 
+            <input type="date" name="dataNasc" required>
+
+            <br><br>
+
+            Horário do cadastro:<br>
+            <input type="time" name="horaCad">
+         </fieldset>
+
+         <br><br>
+
+         Tipo Preferido:<br>
+          <select name="tipo">
+          	<option value="Bug">Bug</option>
+            <option value="Dark">Dark</option>          
+            <option value="Dragon">Dragon</option>
+            <option value="Eletric">Eletric</option>
+            <option value="Fairy">Fairy</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Fire">Fire</option>
+            <option value="Flying">Flying</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Grass">Grass</option>
+            <option value="Ground">Ground</option>
+            <option value="Ice">Ice</option>
+            <option value="Normal">Normal</option>
+            <option value="Poison">Poison</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Rock">Rock</option>
+            <option value="Steel">Steel</option>
+            <option value="Watter">Watter</option>   
+          </select> 
+
+         <br><br>
+
+         Região preferida:<br>
+         <select name="região"> 
+          <option value="kanto">Kanto</option>
+          <option value="johto">Jhoto</option>
+          <option value="hoen">Hoen</option>
+          <option value="sinnoh">Sinnoh</option>
+          <option value="unova">Unova</option>
+          <option value="kalos">Kalos</option>
+          <option value="alola">Alola</option>
+         </select>
+
+         <br><br>
+
+         Inicial Preferido:<br>
+
+         <select>
+         	<optgroup label="kanto">
+         	  <option value="bulbasaur">bulbasaur</option>
+         	  <option value="charmander">charmander</option>
+         	  <option value="squirtle">squirtle</option>		
+         	</optgroup>
+
+         	<optgroup label="johto">
+         	  <option value="chikorita">chikorita</option>
+         	  <option value="cyndaquil">cyndaquil</option>
+         	  <option value="totodile">totodile</option>	
+         	</optgroup>
+
+            <optgroup label="hoen">
+              <option value="treecko">treecko</option>
+              <option value="tochic">tochic</option>
+              <option value="mudkip">mudkip</option>    
+            </optgroup>
+
+            <optgroup label="sinnoh">
+              <option value="turtwig">turtwig</option>
+              <option value="chinchar">chinchar</option>
+              <option value="piplup">piplup</option>    
+            </optgroup>
+
+            <optgroup label="unova">
+              <option value="shivy">shivy</option>
+              <option value="tepig">tepig</option>
+              <option value="oshawott">oshawott</option>    
+            </optgroup>
+
+            <optgroup label="kalos">
+              <option value="chespin">chespin</option>
+              <option value="fennekin">fennekin</option>
+              <option value="froakie">froakie</option>    
+            </optgroup>
+
+            <optgroup label="alola">
+              <option value="rowlet">rowlet</option>
+              <option value="litten">litten</option>
+              <option value="poplio">poplio</option>    
+            </optgroup>
+         </select>
+         
+         <br><br>
+
+         Pokémon Preferido:<br>
+         <input type="text" name="Pokémon" maxlength="20">
+
+         <br><br>
+
+         Foto de Perfil:<br>
+         <input type="file" name="foto" accept=".jpg,.gif,.png" required>
+
+         <br><br>
+
+         E-mail:<br>
+         <input type="email" size="50" placeholder="e-mail" required>
+
+         <br><br>
+
+         Site de Informações Pokémon:<br>
+         <input type="url" placeholder="site" size="50">
+
+         <br><br>
+
+         Observações:<br>
+         <textarea rows="5" cols="50">
+         </textarea>
+
+         <br><br>
+
+         <input type="reset" value="Limpar">
+
+        <input type="submit" name="Enviar">
+	</form>
+</body>
+</html>
